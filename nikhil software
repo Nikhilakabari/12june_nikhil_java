@@ -1,0 +1,47 @@
+software : software is a collection of data,information and instruction
+ 
+ software type
+ 1) system software : ( os) operating software
+      ex; ios,android,widow
+
+ 2) appalication software :
+     1) web appalication : 
+
+     2) mobile appalication : camera, contect , calculater 
+
+     3) desktop appalication : noteped , 
+ 
+ 3) programming software
+     it is a set of instruction
+     compiler
+
+      1) high level : near to human far to machine 
+           1) object oriented programming : java c++ c#
+           2) procere oriented programming : basic forten 
+           3) logical programming language : prolog
+           4) functional programming : python
+           5) scripting programming language : java script
+
+      2) low level : near to machine far to human 
+           1) machine learning 
+           2) assembly language
+
+  4) driver software
+
+  5) middleware  ex datebase
+
+
+internet protocal : it is a set of rule 
+ ex http, https, pop, tcp 
+
+ SDLC : software development life cycle 
+   1) planing
+   2) analysis
+   3) desine
+   4) implemantation
+   5) testing & integration
+   6) maintenance
+
+
+ 
+           
