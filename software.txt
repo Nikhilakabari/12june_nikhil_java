@@ -1,0 +1,29 @@
+software ; it is a collection of data , information and instruction
+
+
+
+type
+1)system software ; (operating software )
+   work as a operator oparate varrious system ex. ios ,android,window
+
+2)Application software ;
+  1)web application ; ex crome,facebook
+  2)mobile application ; ex calculator, calender , clock 
+  3)desktop application ex noteped, vscode
+
+3)Middleware;
+   work as a middater ex database
+
+4)driver :
+     ex videodriver,audiodriver,
+
+5)programming software;
+   work as a compilor
+   1)high level :pop ;proceser oriented programming ; java
+                 oop ;object oriented programming ex c,c++,c#
+                 logical programming :
+                 functional langauge ; 
+                 script langauge ;java script
+   2)low level : assemly langauge
+                 machine langauge
+
