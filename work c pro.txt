@@ -1,0 +1,52 @@
+#include <stdio.h>
+
+int main()
+{
+    int no;
+    char nm;
+    printf("your name is: %c",nm);
+    scanf("%c",&nm);
+    printf("\nyour luck is: %d",no);
+    scanf("%d",&no);
+}
+
+
+#include <stdio.h>
+
+int main()
+{
+    int x, z;
+    int ans;
+    printf("enter value:\nA: ");
+    scanf("%d", &x);
+    printf("B: ");
+    scanf("%d", &z);
+    ans = x + z;
+    printf("\nAddition of x nad z is:%d",ans);
+    printf("\nsubstraction :%d",x-z);
+    printf("\nmodulo:%d",x%z);
+}
+
+
+include <stdio.h>
+
+int main()
+{
+    int no = 78;
+    printf("your langauge is: %d",no);
+    
+    
+}
+
+
+#include <stdio.h>
+
+int main()
+{
+    int no;
+    printf("enter age  :  ");
+    scanf("%d",&no);
+    printf("enter your age :%d",no);
+    
+    
+}
