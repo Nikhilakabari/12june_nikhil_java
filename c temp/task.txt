@@ -1,0 +1,12 @@
+#include <stdio.h>
+
+int main() {
+
+    int n,h;
+    printf("enter the value of n and h :  ");
+    scanf("%d%d", &n,&h);
+    h+=n;
+    printf("\n addition of a and b is :%d", h);
+
+    return 0;
+}
