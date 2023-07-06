@@ -1,0 +1,39 @@
+implicite
+
+#include <stdio.h>
+
+int main()
+{
+    
+    char v = 'd', g = 't';
+    printf("subtraction of v and g is :%d",v-g);
+    return 0;
+}
+
+
+explicite
+
+#include <stdio.h>
+
+int main()
+{
+    
+    int x = 67, g = 89;
+    float  ans;
+    ans = (float)g / (float)x;
+    printf("\ndivision of g and x is :%f", (float)g/(float)x);
+}
+
+
+include <stdio.h>
+
+int main()
+{
+    
+    int b,h;
+    printf("enter value of b and h: ");
+    scanf("%d%d", &b, &h);
+    b++;
+    h++;
+    printf("value of \n is:%d", b,h);
+}   
