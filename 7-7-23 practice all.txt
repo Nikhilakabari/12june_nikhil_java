@@ -1,0 +1,107 @@
+#include<stdio.h>
+
+int main()
+{
+    int no;
+    char nm;
+    printf(" enter the name : ");
+    scanf("%c",&nm);
+    printf("\nyour name is :%c",nm);
+    
+    printf("\nenter the no: ");
+    scanf("%d",&no);
+    printf("your no is:%d",no);
+    
+    return 0;
+}
+
+#include<stdio.h>
+
+int main()
+{
+    int d , j
+    printf("enter the value D: ");
+    scanf("%d",&d);
+    printf("enter value J: ");
+    scanf("%d",&j);
+    printf("\nsubtraction of D and J is :%d",d-j);
+    printf("\naddition of D and J is :%d", d+j);
+    printf("\nmodulo is :%d",d/j);
+}
+
+
+impricite
+#include<stdio.h>
+
+int main()
+{
+    char d = 'n' , b = 'n' , m = 'n';
+    printf("addition of d ,n ,m is :%d", d+b+m);
+    printf("subtractionof dnm is:%d", d-b-m);
+}
+
+
+expricite
+#include<stdio.h>
+
+int main()
+{
+    int d = 48 , b = 67;
+    float ans;
+    ans = (float)d/(float)b;
+    printf("your d and b is :%f",d/b);
+}
+
+
+
+#include<stdio.h>
+
+int main()
+{
+    int n, m ;
+    printf("your no is n and m : ");
+    scanf("%d%d",&n,&m);
+    printf("value of your \n n is  :%d  \n m is :%d ");
+}
+
+
+
+
+#include <stdio.h>
+
+int main() 
+{
+    int no;
+    printf("enter the number: ");
+    scanf("%d", &no);
+    if(no <= -67)
+    {
+        printf("wrong no");
+    }
+else{
+    printf("right no");
+}
+
+    return 0;
+}
+
+
+
+#include<stdio.h>
+
+int main()
+{
+    int no;
+    printf("enter the number:  ");
+    scanf("%d", &no);
+    if(no%2 == 0)
+    {
+        printf("no is wrong");
+    }
+else
+{
+    printf("no is right");
+    
+}
+return 0;
+}
