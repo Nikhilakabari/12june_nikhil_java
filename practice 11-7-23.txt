@@ -1,0 +1,26 @@
+#include <stdio.h>
+
+int main() {
+    char nm;
+    int no;
+    int e , b ;
+    
+    printf("enter the name : ");
+    scanf("%c",&nm);
+    printf("your name is :%c",nm);
+    printf("\n enter the value of e is:  "  );
+     scanf("%d",&e);
+    printf("\n enter the value of b is:  ");
+    scanf("%d",&b);
+    int ans = e+b;
+    printf("total value is:%d",ans );
+    if( ans >= 100)
+    {
+        printf("\npass");
+
+    }
+    else{
+        printf("\nfail");
+    }
+    return 0;
+}
