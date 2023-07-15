@@ -1,0 +1,60 @@
+// pointer //
+
+#include <stdio.h>
+
+int main() {
+    int w = 67;
+    int *ptr;
+    ptr = &w;
+   // printf(" address of w is :%d",ptr);
+  //  ptr++;
+  //  printf("\n address after incriment is :%d", ptr);
+    printf("\n value of w is :%d",*ptr);
+    *ptr = 90;
+    printf("\nnew value of w is :%d",w);
+    --*ptr;
+    printf("\n new value after decriment is :%d",w);
+
+
+    return 0;
+}
+
+// conditional //
+
+#include<stdio.h>
+
+int main()
+{
+    int v , b , n;
+    printf("enter the value of v ,b nad n :");
+    scanf("%d%d%d", &v,&b,&n);
+    (v > b) ? ((v>n)? printf( "v is max") : printf("n is max")) :  
+    ((b>n) ? printf("b is max"):printf("n is max"));
+}
+
+
+// constant//
+#include<stdio.h>
+
+int main()
+{
+    const int m = 57;
+    printf("value of m is :%d", m);
+    m = 80;
+}
+
+
+// define//
+#include<stdio.h>
+#include<math.h>
+#define pi 3.14
+
+int main()
+{
+    int r;
+    float area;
+    printf("enter the radious of circle: ");
+    scanf("%d",r);
+    area = pi * pow((float)r,2);
+    printf("\narea of circle is :%f",area);
+}
