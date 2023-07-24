@@ -1,0 +1,80 @@
+simple if
+#include <stdio.h>
+
+int main() {
+    
+    int no;
+    printf("enter the no: ");
+    scanf("%d", &no);
+    if(no == 10){
+        printf("your no is equal to 10");
+    }
+
+    return 0;
+}
+
+
+ // nested if//
+#include <stdio.h>
+
+int main() {
+    
+    int e,r,t;
+    printf("enter the no: ");
+    scanf("%d%d%d",&e,&r,&t);
+    if(e > r)
+    {
+       if(e > t)
+       { 
+        printf("e is max");
+       }
+    
+       else
+       {
+           printf("t is max");
+       }
+}
+       else
+       {
+           if(r > t)
+           {
+           
+               printf("r is max");
+           }
+       
+    }
+    
+    return 0;
+}
+
+
+
+switchcase
+
+#include<stdio.h>
+
+int main()
+{
+    int option ;
+    printf("select one given below option ");
+    printf("\n1.option\n2.option\n3.option\n4.option");
+    scanf("%d", &option);
+    switch(option){
+        case 1:
+        printf("\n1.option");
+        break;
+        case 2:
+        printf("\n2.option");
+        break;
+        case 3:
+        printf("\n3.option ");
+        break;
+        case 4:
+        printf("\n4.option ");
+        break;
+        default:
+        printf("enter the right choice");
+        break;
+    }
+    return 0;
+}
