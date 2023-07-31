@@ -1,0 +1,40 @@
+Q - 3:what is sdlc? explain each phase of sdlc
+
+ans:
+SDLC ( software development life cycle ) : it is the cycle which continue run according to clint requirement and user requirement for new development and updatation of software
+
+
+1)planing : preparion of software collection data about requirement of clint 
+    
+2)analysis : it's process were analysis  existing data according to clint require software
+
+3)desien : designing of software ,development process of software
+
+4)implemantation ; implemantation of software is working or not , any error
+
+5)testing & integration ; testing in public domine by users ,review software any other requirement for update
+
+6)maintanence : as per public review update software , update according public and admin requirement
+
+
+
+Q - 4:what is dfd? 
+ans:
+DFD: Data Flow Digram
+ it is use to show flow of data
+ 
+level 1
+ 
+
+Level 2
+
+
+Q - 5:what is flow chart?
+
+ans:
+ it is describe the process of data and output.
+
+
+Q -6 :what is use case diagram?
+ans:
+ it is diagram which describe user and admin sennario of  accesses  and non accesses of data by user or admin
