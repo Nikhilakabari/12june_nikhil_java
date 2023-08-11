@@ -1,0 +1,38 @@
+Q 2 Write a program to make Simple calculator (to make addition, subtraction, 
+multiplication, division and modulo)
+
+
+ ans :
+
+#include<stdio.h>
+
+int main()
+{
+    int w,n ;
+    printf("enter value of w and n: ");
+    scanf("%d%d",&w,&n);
+    printf("select one given below option ");
+    int option;
+    printf("\noption 1.addition\noption2.subtraction\noption3.multiplication\noption4.division\noption5.modulo");
+    scanf("%d", &option);
+    switch(option){
+        case 1:
+        printf("\noption1. addition:%d",w+n);
+        break;
+        case 2:
+        printf("\noption2. subtraction:%d",w-n);
+        break;
+        case 3:
+        printf("\noption3. multiplication:%d",w*n);
+        break;
+        case 4:
+        printf("\noption4. division:%d",w/n);
+        break;
+        case 5:
+        printf("\noption5. modulo:%d",w%n);
+        default:
+        printf("enter the right choice");
+        break;
+    }
+    return 0;
+}
