@@ -1,0 +1,22 @@
+Q 3.2 7)WAP to print Fibonacci series up to given numbers
+
+ans:
+#include<stdio.h>
+
+int main()
+{
+  
+    int n = 1, num ,z;
+    int n1 = 0, n2 = 1;
+    printf("enter no:");
+    scanf("%d",&num);
+     for(z = 0; z < num ; z++)
+    {
+        printf("%d\n",n1);
+        n1 = n2;
+        n2 = n1 + n2;
+        
+    }
+    printf("fibonachi no:%d",n);
+    return 0;
+}

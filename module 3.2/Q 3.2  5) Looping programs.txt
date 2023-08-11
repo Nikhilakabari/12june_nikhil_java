@@ -1,0 +1,77 @@
+Q 3.2 5)Looping programs: 
+1. WAP to print 972 to 897 using for loop
+
+ans:
+#include <stdio.h>
+
+int main() 
+{
+    int o;
+    for(o = 972;o >= 897 ; o--)
+{
+        printf("\n%d",o);
+}
+return 0;
+}
+
+Q 3.2 5)
+2. WAP to take 10 no. Input from user and find out … 
+3. How many Even numbers are there 
+4. How many odd numbers are there 
+5. Sum of even numbers 
+6. Sum of odd numbers
+
+ans :
+#include<stdio.h>
+
+int main()
+{
+    int no[10];
+    int z, odd = 0,  even = 0 ,noe = 0, noo = 0;
+    for(z = 0; z < 10 ; z++)
+    {
+        printf("enter 10 no: ");
+        scanf("%d", &no[z]);
+    }
+    for (z = 0; z < 10; z++)
+    {
+        if((no[z]%2) == 0)
+        {
+            printf("\nno is even:%d",no[z]);
+            even+= no[z];
+            noe++;
+        }
+        else if((no[z]%2) != 0)
+        {
+            printf("\ngno is odd%d",no[z]);
+            odd+= no[z];
+            noo++;
+        }
+    }
+    printf("\n no of even%d: \n no of odd%d:",noe,noo);
+    printf("\neven sum = %d \n odd sum = %d",even,odd);
+    
+    return 0;
+}
+
+
+WAP to print table up to given numbers
+
+ans :
+// wap to print table //
+
+#include<stdio.h>
+
+int main()
+{
+    int r, no , ans;
+    printf("enter no:");
+    scanf("%d", &no);
+    for(r = 1; r <= 10; r++ )
+    {
+        ans = no*r;
+        printf("\n%d*%d=%d",no,r,ans);
+    
+    }
+    return 0;
+}

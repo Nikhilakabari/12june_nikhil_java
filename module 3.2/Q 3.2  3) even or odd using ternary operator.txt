@@ -1,0 +1,15 @@
+Q 3.2 3)WAP to find number is even or odd using ternary operator
+
+
+ans:
+//ternary op check no is odd or even
+
+#include<stdio.h>
+
+int main()
+{
+    int no;
+    printf("enter the no: ");
+    scanf("%d",&no);
+    (no%2 == 0) ? printf("no is even"):printf("no is odd");
+}
