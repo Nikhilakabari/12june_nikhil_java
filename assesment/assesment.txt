@@ -1,0 +1,156 @@
+assesment
+
+
+
+#include <stdio.h>
+#include<string.h>
+#include<ctype.h>
+
+int main() {
+    int c;
+    printf("1.reverse a string\n2.Concatenation\n3.Palindrome \n4.Copy a string \n5.Length of the string \n6.Frequency of character in  string \n7.Find number of vowels and consonants \n8.Find number of blank spaces and digits ");
+    printf("enter the choice from above: ");
+    scanf("%d",&c);
+    switch(c)
+    {
+        case 1:
+        char n[100];
+        printf("enter the string: ");
+        scanf("%s",&n);
+        strrev(n);
+        printf("\n your reverse string is :%s",n);
+        break;
+        
+        case 2:
+        char u[100],t[100];
+        printf("enter the 1st name: ");
+        scanf("%s",&u);
+        printf("enter the last name:");
+        scanf("%s",&t);
+        strcat(u,t);
+        printf("\n your full nameis:%s",u);
+        break;
+         
+        case 3:
+        char str1[40],str2[40];
+        printf("enter the string ");
+        scanf("%s",&str1);
+        strcpy(str2,str1);
+        strrev(str2);
+        if(strcmp(str1,str2) == 0)
+        {
+    	printf("string is palindrome");
+	}
+        else
+        {
+    	printf("string is not palindrome");
+	}
+        break;
+        
+        
+        
+        case 4:
+        char y[100],z[100];
+        printf("enter the 1 st string :");
+        scanf("%s",&y);
+        strcpy(z,y);
+        printf("\n your second string is :%s",z);
+        break;
+        
+        case 5:
+        int len;
+        char a[100];
+        printf("enter the string:");
+        scanf("%s",&a);
+        len = strlen(a);
+        printf("length of string is%d",len);
+        break;
+        
+        case 6:
+         int f = 0,x;
+        char o[100],p;
+        printf("enter the name: ");
+        scanf("%s",&o);
+        printf("enter the charecter to count: ");
+        scanf("%s",&p);
+         x = strlen(o);
+        for(int i = 0;i < x;i++)
+        {
+        	if(o[i] == p)
+        	{
+             	f++;
+        	}
+         }
+        	 printf("frequency of charecter is :%d",f);
+		
+        break;
+
+
+        case 7:
+         char r[100],vo,co;
+        printf("Enter a string: ");
+        scanf("%s", &r);
+        int lengt = strlen(r);
+         for (int j = 0; j < lengt; j++)
+         {
+         	if(r[j] >= 'A' && r[j] <= 'Z' || r[j] >= 'a' && r[j] <= 'z')
+         	{
+             if(r[j] == 'a' || r[j] == 'e' || r[j] == 'i' || r[j] == 'o' || r[j] == 'u' || r[j] == 'A' || r[j] == 'E' || r[j] == 'O' || r[j] == 'I' || r[j] == 'U')
+             {
+                 vo++;
+             }
+             else
+			 {
+                 co++;
+             }
+         } 
+         }
+          printf("Number of vowels: %d\n",vo);
+          printf("Number of consonants: %d\n",co);
+
+    break;
+    
+         case 8:
+         char q[100];
+         printf("enter the string: ");
+         scanf("%s",q);
+         int spac = 0;
+         int digi = 0;
+         int length = strlen(q);
+         printf("%s",q);
+         for (int m = 0; m < length; m++)
+         {
+         if (q[m] == ' ') 
+         {
+            spac++;
+         } 
+         else if (q[m] >= 'a' && q[m] <= 'z')
+         {
+            digi++;
+         }
+         }
+         printf("Number of blank spaces: %d\n", spac);
+         printf("Number of digits: %d\n", digi);
+         break;
+         
+         case 9:
+                printf("Exiting the program.\n");
+                break;
+        
+		
+        default:
+        printf("Invalid choice. Please select a valid option.\n");
+        if (c != 9) {
+            char ao[5];
+            printf("Do you want to perform another operation? (yes/no): ");
+            scanf(" %s",ao);
+            if (strcmp(ao, "no") == 0) {
+                printf("Exiting the program.\n");
+                break;
+            }
+        }
+
+    } while (1);
+
+    return 0;
+    }
