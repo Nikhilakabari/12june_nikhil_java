@@ -1,0 +1,87 @@
+a#include <iostream>
+
+int main() {
+    int no;
+    std::cout << "enter the no:";  //insersion op
+    std::cin>>no;  //exsartion op
+    std::cout<<"your value is:"<<no;
+
+    return 0;
+}
+
+
+class
+
+#include <iostream>
+
+using namespace std;
+class demo{
+    public:
+    int no;
+    int getdata()
+    {
+        cout<<"enter the value of the no:";
+        cin>>no;
+        return 0;
+    }
+    void display()
+    {
+        cout<<"value of the no is:"<<no;
+    }
+};
+int main()
+{
+    demo d1;
+    d1.display();
+    d1.getdate();
+    return 0;
+}
+
+
+constructer
+
+#include <iostream>
+
+using namespace std;
+class data{
+    public:
+    int a,b;
+    data()
+    {
+        cout<<"enter the value of the a ,b:";
+        cin>>a>>b;
+        
+    }
+    void print()
+    {
+        cout<<"addition of a and b is "<<a+b;
+    }
+};
+int main()
+{
+    data d1;
+    d1.print();
+    return 0;
+}
+
+
+parameraize constructer
+
+#include <iostream>
+
+using namespace std;
+class data{
+    public:
+
+    data(int a,int b)
+    {
+        cout<<"addition of a b is "<<a+b;
+    }
+   
+};
+int main()
+{
+    data d1(6,7);
+
+    return 0;
+}
