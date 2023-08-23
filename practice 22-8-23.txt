@@ -1,0 +1,97 @@
+#include <stdio.h>
+
+int main() {
+   int a[100],i,max,r;
+   printf("enter the array you want to print");
+   scanf("%d",&i);
+   for(int r = 0; r < i;r++)
+   {
+   printf("enter the no;");
+   scanf("%d",&a[r]);
+   }
+   max = a[0];
+   for(int n =0; n <= a[r]; n++)
+   {
+       if(a[n] > max)
+       {
+           max = a[n];
+       }
+   }
+   printf("max no is :%d",max);
+    return 0;
+}
+
+mAX NO
+
+#include <stdio.h>
+
+int main() {
+   int a,r;
+   printf("enter the array you want to print");
+   scanf("%d",&a);
+   int max = 0;
+   while(a > 0)
+   {
+       r = a%10;
+       if(r > max)
+      {
+          max = r;
+      }
+      a /= 10;
+   }
+   printf("max no is :%d",max);
+    return 0;
+}
+
+
+#include <stdio.h>
+
+int main() {
+   int a ,r = 0;
+   printf("enter the no");
+   scanf("%d",&a);
+  
+   for(int z = a;z >= 1; z--)
+   {
+       a*=z;
+   }
+   printf("factoril%d",a);
+    return 0;
+}
+
+revesrse
+
+int main()
+{
+    
+    int n, num ,z;
+    printf("enter the no");
+    scanf("%d",&num);
+for( z = 0; z < num; z++)
+    {
+        n = num%10;
+        num /= 10;
+        printf("%d",n);
+        
+    }
+return 0;
+}
+
+fibonachi
+
+summTION
+int main()
+{
+    int num,n=0,sum;
+    printf("enter the no");
+    scanf("%d",&num);
+    while(num > 0){
+        sum+=num%10;
+        num /= 10;
+        
+    }
+        printf("%d",sum);
+        
+    
+return 0;
+}

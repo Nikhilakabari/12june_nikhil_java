@@ -1,0 +1,231 @@
+assending
+#include <stdio.h>
+
+int main() {
+    int a,j[100];
+    printf("enter the no you want");
+    scanf("%d",&a);
+    for(int r = 0; r < a;r++)
+    {
+        scanf("%d",&j[r]);
+    }
+    for(int i = 0; i < a ; i++)
+    {
+        for(int y = 0; y < a ; y++)
+        {
+            if(j[y]<j[i])
+            {
+                int f = j[y];
+                j[y] = j[i];
+                j[i] = f;
+            }
+        }
+    }
+    for(int r = 0; r < a ; r++)
+    {
+        printf("%d",j[r]);
+    }
+    
+    return 0;
+}
+
+2d metrix ;
+
+
+
+int main()
+{
+    int a[10][10],b[10][10],e[10][10];
+    int d,f,r1,c1,r2,c2;
+    printf("enter the row and column of 1 st metrix");
+    scanf("%d%d",&r1,&c1);
+    printf("\nenter the row and column of 2 nd metrix");
+    scanf("%d%d",&r2,&c2);
+    printf("enter the element of 1 st metrix");
+    for(int i = 0; i < r1; i++)
+    {
+        for(int j = 0; j < c1; j++)
+        {
+            scanf("%d",&a[i][j]);
+        }
+    }
+    printf("\n");
+    printf("enter the 2 nd metrix");
+    for(int i = 0; i < r2 ; i++)
+    {
+        for(int j = 0; j < c2 ; j++)
+        {
+            scanf("%d",&b[i][j]);
+        }
+    }
+    printf("\n");
+    for(int i = 0; i < r1; i++)
+    {
+        for(int j = 0; j < c1; j++)
+        {
+            printf("%d",a[i][j]);
+        }
+    }
+    printf("\n");
+    for(int i = 0; i < r2 ; i++)
+    {
+        for(int j = 0; j < c2 ; j++)
+        {
+            printf("%d",b[i][j]);
+        }
+    }
+    printf("\n");
+    
+    for(int i = 0; i < r1; i++)
+    {
+        for(int j = 0; j < c2; j++)
+        {
+            int y = 0;
+            for(int k =0; k < c1;k++)
+            {
+                y = a[i][k]*b[k][j];
+                e[i][j] = y;
+            }
+        }
+    }
+    printf("3 rd metrix");
+    for(int i = 0; i <r1; i++)
+    {
+        for(int j = 0; j < c2;j++)
+        {
+            printf("%d\t",e[i][j]);
+        }
+    }
+    printf("\n");
+    
+    return 0;
+}
+
+
+
+int main()
+{
+    int a[10][10],b[10][10],e[10][10];
+    int l;
+    printf("enter 1 st metrix");
+    
+    for(int i = 0; i < 2; i++)
+    {
+        for(int j = 0; j < 2; j++)
+        {
+            scanf("%d",&a[i][j]);
+        }
+    }
+    printf("\n");
+    printf("enter the 2 nd metrix");
+    for(int i = 0; i < 2 ; i++)
+    {
+        for(int j = 0; j < 2 ; j++)
+        {
+            scanf("%d",&b[i][j]);
+        }
+    }
+    printf("\n");
+    for(int i = 0; i < 2; i++)
+    {
+        for(int j = 0; j < 2; j++)
+        {
+            printf("%d",a[i][j]);
+        }
+    }
+    printf("\n");
+    for(int i = 0; i < 2 ; i++)
+    {
+        for(int j = 0; j < 2 ; j++)
+        {
+            printf("%d",b[i][j]);
+        }
+    }
+    printf("\n");
+    
+    for(int i = 0; i < 2; i++)
+    {
+        for(int j = 0; j < 2; j++)
+        {
+        	
+            e[i][j] = a[i][j]+b[i][j];
+            
+            
+        }
+    }
+    printf("3 rd metrix");
+    for(int i = 0; i <2; i++)
+    {
+        for(int j = 0; j < 2;j++)
+        {
+            printf("%d\t",e[i][j]);
+        }
+    }
+    printf("\n");
+    for(int i = 0; i < 2; i++)
+    {
+        for(int j = 0; j < 2; j++)
+        {
+        	
+            l = a[i][j]-b[i][j];
+            
+            
+        }
+    }
+    for(int i = 0; i <2; i++)
+    {
+        for(int j = 0; j < 2;j++)
+        {
+            printf("%d\t",l);
+        }
+    }
+    return 0;
+}
+
+
+sring length without string function;
+#include<stdio.h>
+
+int strlen(char str[])
+{
+    int len =0;
+    while(str[len] != 0)
+    {
+        len++;
+    }
+    return len;
+}
+
+int main()
+{
+    char t[100];
+    printf("enter the string");
+    scanf("%s",&t);
+    int len = strlen(t);
+    printf("%d",len);
+}
+
+
+palindrome or not
+
+#include <stdio.h>
+#include<string.h>
+
+int main()
+{
+    
+    char str1[100],str2[100];
+    printf("enter the name:");
+    scanf("%d",&str1);
+    strcpy(str2,str1);
+    strrev(str2);
+    if(strcmp(str1,str2) == 0)
+    {
+        printf("string is palindrone");
+    }
+    else {
+        printf("string is not palindrome");
+    }
+    return 0;
+
+}
