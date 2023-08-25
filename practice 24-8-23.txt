@@ -1,0 +1,82 @@
+#include <stdio.h>
+
+int main() {
+    int i,max,t[100];
+    printf("enter the no you want ");
+    scanf("%d",&i);
+    for(int r = 0; r < i ; r++)
+    {
+        scanf("%d",&t[r]);
+    }
+    max = t[0];
+    for(int n = 0;n <= t[n];n++)
+    {
+        if(t[n]>max)
+        {
+            max = t[n];
+        }
+    }
+    printf("max is%d ",max);
+    return 0;
+}
+
+#include <stdio.h>
+
+int main()
+{
+	int a[100],t,r=0,c;
+	printf("enter the 2 no:");
+	for(int i = 0; i < 2;i++)
+	{
+		scanf("%d",&a[i]);
+		
+	}
+	printf("enter the choice :1.ascending2.descending");
+	scanf("%d",&c);
+	
+	switch(c)
+	{
+		case 1:
+		for(int e = 0; e < 2;e++)
+		{
+			for(int y = 0; y < 2;y++)
+			{
+				if(a[e]>a[y])
+				{
+					r = a[e];
+					a[e] = a[y];
+					a[y] = r;
+				}
+			}
+		}
+		for(int i=0;i< 2;i++)
+		{
+			printf("%d",a[i]);
+		}
+		break;
+		
+		case 2:
+		for(int e = 0; e < 2;e++)
+		{
+			for(int y = 0; y < 2;y++)
+			{
+				if(a[e]<a[y])
+				{
+					r = a[e];
+					a[e] = a[y];
+					a[y] = r;
+				}
+			}
+		}
+		for(int i=0;i< 2;i++)
+		{
+			printf("%d",a[i]);
+		}
+		break;
+		
+	
+		
+	}
+	return 0;
+	
+}
