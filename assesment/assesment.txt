@@ -1,0 +1,166 @@
+assesmentst
+
+
+
+#include <stdio.h>
+#include<string.h>
+
+void freccharecter(char *r,char p)// Function to count the frequency of a character in a string
+{
+    int f = 0;//make a int to count frequency of charecter
+    int len;
+    len = strlen(r);
+    for(int i = 0;i < len ;i++)//make a loop to check how many time a charecter in string
+    {
+        if(r[i] == p)// if charecter are show in string it will be count
+        {
+            f++;
+        }
+    }printf("frequnacy of charecter is:%d",f);
+}
+
+void countvowelcons(char *r)// Function to count vowels and consonants in a string
+{
+    int vo = 0;//make a int for count vowels and consonant
+    int co = 0;
+    int len = strlen(r);
+    for(int i = 0;i < len;i++)//make a loop for how many consonants and vowels are show in string
+    {
+        if(r[i] >='a' && r[i] <= 'z' || r[i] >= 'A' && r[i] <= 'Z')
+        {
+            if(r[i] == 'a' || r[i] == 'i' || r[i] == 'e' || r[i] =='o' || r[i] == 'u' || r[i] == 'A' || r[i] == 'I' || r[i] == 'O' || r[i] == 'E' || r[i] == 'U')
+            {
+                vo++;// if vowels show it will be count
+            }
+            else
+            {
+               co++; // if consonants show it will be count
+            }
+        }
+    }printf("vowels%d\n",vo);
+    printf("consonants%d\n",co);
+}
+
+void countspacedigit(char *r)// Function to count blank spaces and digits in a string
+{
+    int spac = 0;//make a int to count space and digits
+    int digi = 0;
+    int len = strlen(r);
+    for(int i = 0;i < len;i++)//make a loop for how many space and digits in string
+    {
+        if(r[i] == ' ')
+        {
+            spac++;//if space show it will be count
+        }
+        else if(r[i] >='a' && r[i] <= 'z' || r[i] >= 'A' && r[i] <= 'Z')
+        {
+            digi++;//if digits show it will be count
+        }
+    }printf("spaces%d\n",spac);
+    printf("digits%d\n",digi);
+}
+
+int main()
+{
+    char r[100];//make a int  to take a string from users 
+    int c;
+    char u[100];
+    char t[100];
+    do{
+        printf("1.Reverse string\n 2.concatenate string\n 3.string is palindrome\n 4.copy sring\n 5.length of string\n 6.count frequency of charecter\n 7.count vowels and consonants\n 8.count space and digits\n 9.exit");
+        scanf("%d",&c);
+        
+        switch(c)
+        {
+            case 1://reserse string operation
+            printf("enter the string:");
+            scanf("%s",&u);
+            strrev(u);
+            printf("reserse string is:%s",u);
+            break;
+            
+            case 2://concatenation of string
+            printf("enter the 1st name: ");
+            scanf("%s",&u);
+            printf("enter the last name:");
+            scanf("%s",&t);
+            strcat(u,t);
+            printf("\n your full nameis:%s",u);
+            break;
+            
+            case 3://operation to check string is palindrome or not
+            printf("enter the string ");
+            scanf("%s",&t);
+            strcpy(u,t);//copy the 1st  string to 2 nd sring 
+            strrev(u);// then reserse the the 2 nd string
+            if(strcmp(t,u) == 0)// compare 1st and 2 nd string 
+             {
+    	    printf("string is palindrome");//if both are equal then string is palindrome
+	         }
+             else// if not equal then string is not palindrome
+             {
+    	     printf("string is not palindrome");
+             }
+             break;
+    	     
+    	     case 4://copy string operation
+    	     printf("enter the 1 st string :");
+             scanf("%s",&u);
+             strcpy(t,u);
+             printf("\n your second string is :%s",t);
+             break;
+             
+             case 5://operation to check length of string
+             int len;
+             printf("enter the string:");
+             scanf("%s",&u);
+             len = strlen(u);
+             printf("length of string is%d",len);
+             break;
+             
+             case 6://operation to check frequency of specific charecter in string
+             char p;
+             printf("enter the string:");
+             scanf("%s",r);
+             printf("enter the charecter for count:");
+             scanf("%s",&p);
+             freccharecter(r,p);
+             break;
+             
+             case 7://operation to count vowels and consonants in string
+             printf("enter the string:");
+             scanf("%s",r);
+             countvowelcons(r);
+             break;
+             
+             case 8://operation to count space and digits in string
+             printf("enter the string:");
+             scanf("%s",r);
+             countspacedigit(r);
+             
+             case 9:
+             printf("exit the programme");
+             break;
+             
+              default:
+              printf("Invalid choice. Please select a valid option.\n");
+              break;
+          }
+              
+              
+              if (c != 9) 
+		      {
+              char ao[5];
+              printf("Do you want to perform another operation? (yes/no): ");
+               scanf(" %s",ao);
+              if (strcmp(ao, "no") == 0) 
+		       	{
+                printf("Exiting the program.\n");
+                break;
+                }
+              }
+
+      }   while (1);//make a do while loop for user will continue programme or not
+
+    return 0;
+}
