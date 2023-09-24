@@ -1,0 +1,35 @@
+Write a program to find the multiplication values and the cubic values using 
+inline function 
+
+#include <iostream>
+
+using namespace std;
+
+
+// Inline function to calculate multiplication
+inline int multiply(int x, int y)
+ {
+    return x * y;
+}
+
+// Inline function to calculate cubic value
+inline int cubic(int x) 
+{
+    return x * x * x;
+}
+
+int main() {
+    int num1,num2;
+
+    cout << "Enter a number: ";
+    cin >> num1>>num2;
+
+    int multiplication = multiply(num1, num2); 
+    int c = cubic(num1);
+    int c2 = cubic(num2);
+    cout << "Multiplication : " << multiplication << endl;
+    cout << "Cubic : " << c << endl;
+    cout << "cubic:"<<c2<<endl;
+
+    return 0;
+}

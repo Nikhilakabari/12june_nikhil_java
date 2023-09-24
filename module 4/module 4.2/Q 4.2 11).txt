@@ -1,0 +1,33 @@
+#include<iostream>
+
+using namespace std;
+
+class z
+{
+	public:
+		rectangle(int area,int brea)
+		{
+			cout<<"area of rectangle:"<<endl;
+			return area*brea;
+		}
+		triangle(int area,int brea)
+		{
+			cout<<"area of triangle:"<<endl;
+			return 0.5*area*brea;
+		}
+		circle(int area,int brea)
+		{
+			cout<<"area of circle:"<<endl;
+			return 3.14*area*brea;
+		}
+		
+	  
+};
+
+int main()
+{
+	z z1;
+	cout<<z1.rectangle(6,7)<<endl;
+	cout<<z1.triangle(8,9)<<endl;
+	cout<<z1.circle(6,3);
+}

@@ -1,0 +1,46 @@
+Write a program to concatenate the two strings using Operator Overloading
+
+
+ans:
+#include <iostream>
+#include<string.h>
+
+using namespace std;
+
+class z
+{
+	public:
+		char str[20];
+		z()
+		{
+			strcpy(str,"");
+		}
+		z(char s[])
+		{
+			strcpy(str,s);
+		}
+	     	
+		z operator +(z &objs)
+		{
+			z t;
+			strcpy(t.str,str);
+			strcat(t.str,objs.str);
+			return t;
+		}
+		void display()
+		{
+			cout<<str<<endl;
+     	}   
+};
+
+main()
+{
+     z s1 = "nikhil";
+	 z s2 = "akaari";
+	
+	s1.display();
+	s2.display();
+	z s3;
+	s3 = s1 + s2;
+	s3.display();
+}

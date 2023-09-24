@@ -1,0 +1,37 @@
+Q 4.1 3)What is the difference between OOP and POP? 
+
+ans
+
+1. Focus:
+
+OOP focuses on organizing code into objects, which encapsulate both data and behavior. It models real-world entities and their interactions.
+POP focuses on organizing code into procedures or functions, which perform specific tasks on data. It is more centered around the sequence of steps needed to accomplish a task.
+2. Data Handling:
+
+OOP emphasizes encapsulation, where data and the methods that operate on that data are bundled together within a class. The class defines the data structure and the behavior associated with it.
+POP uses data and functions separately. Data is usually stored in separate data structures, and functions manipulate that data.
+3. Reusability:
+
+OOP promotes code reusability through concepts like inheritance and polymorphism. You can create new classes by inheriting from existing ones and override or extend their behavior.
+POP does not have built-in mechanisms for code reusability like inheritance. Reusability is achieved through functions, but it's often limited to copying and pasting code.
+4. Abstraction:
+
+OOP uses abstraction to simplify complex reality by modeling classes based on essential characteristics. It hides unnecessary details and exposes only the necessary features.
+POP also uses abstraction, but it's usually less structured. It involves breaking down a problem into smaller procedural steps.
+5. Control Flow:
+
+OOP uses message passing and method invocation for control flow. Objects communicate with each other by sending messages and invoking methods.
+POP uses control structures like conditionals and loops to manage program flow. Functions are called explicitly to perform specific tasks.
+6. Code Organization:
+
+OOP organizes code into classes and objects. Each class defines a blueprint, and objects are instances of those classes.
+POP organizes code into procedures or functions. These functions are called sequentially to perform tasks.
+7. Examples:
+
+OOP languages include Java, C++, Python (which supports both OOP and other paradigms).
+POP languages include C, Pascal, and early versions of BASIC.
+8. Real-World Analogy:
+
+OOP can be compared to building with Lego blocks, where you assemble objects with predefined shapes and functionalities.
+POP can be likened to following a recipe to cook a meal, where you execute a series of steps in a specific order.
+In summary, OOP and POP are different programming paradigms that offer distinct approaches to software design and development. OOP focuses on modeling entities as objects with associated behavior, while POP focuses on sequences of procedural steps to accomplish tasks. The choice between the two paradigms depends on the nature of the problem you're solving and the design principles you want to follow.
