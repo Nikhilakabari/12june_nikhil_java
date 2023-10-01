@@ -1,0 +1,19 @@
+Q 4.1 2)What is OOP? List OOP concept
+
+
+ans
+
+Object-Oriented Programming (OOP) is a programming that is based on the concept of "objects". it cantain class data member and data member function.
+
+oop concept list:
+1) Object:Any Entity which has own state and behaviour that is called an object
+
+2)Class:collection of data member and data function
+
+3)Abstraction:Hiding of data
+
+4)Encapsulation:Wrapping up of data
+
+5)Inheritance:When one object acquire all the properties and behaviour of parent class
+
+6)Polymorphism: one name many forms called polymorphism

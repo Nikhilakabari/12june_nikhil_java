@@ -1,0 +1,45 @@
+Write a program to swap the two numbers using friend function without 
+using third variable 
+
+
+
+#include <iostream>
+
+
+using namespace std;
+
+class z
+{
+	public:
+		int x,y;
+		void getdata()
+		{
+			cout<<"enter value od x and y"<<endl;
+			cin>>x>>y;
+			cout<<"before swapping x :"<<x<<endl;
+			cout<<"y:"<<y<<endl;
+		}
+		
+		void display()
+		{
+			cout <<"atfer swapping x:"<<x<<endl;
+			cout<<"y:"<<y;
+		}
+		
+		friend void swapn(z &s);
+	};
+	
+	void swapn(z &s)
+	{
+		s.x = s.x + s.y;
+        s.y = s.x - s.y;
+        s.x = s.x - s.y;
+	}
+	
+	int main()
+	{ 
+		z s;
+		s.getdata();
+		swapn(s);
+		s.display();
+	}
