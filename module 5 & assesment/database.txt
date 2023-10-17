@@ -1,0 +1,58 @@
+Q1
+
+ans: an organized collection of structured information, or data
+it works as store data
+
+Q 2
+Normalization is the process of organizing data in a database.
+
+Q3
+Data Structure:
+
+DBMS: A DBMS is a software system that allows for the creation, retrieval, storage, and management of data.
+RDBMS: An RDBMS is a specific type of DBMS that is based on the relational model of data. 
+
+
+Data Integrity:
+DBMS: DBMS systems may or may not enforce data integrity rules, such as constraints and relationships, depending on the specific system.
+RDBMS: RDBMS systems are designed with a strong focus on data integrity. They enforce data constraints (e.g., primary keys, foreign keys).
+
+Query Language:
+DBMS: Generic DBMS systems may offer their own query languages or support SQL
+RDBMS: RDBMS systems typically have robust support for SQL, a standardized and powerful query language for managing relational data. 
+
+Q4
+Codd's rule in DBMS also known as Codd's 12 rules/commandments is a set of thirteen rules (numbered 0 to 12) that define a database to be a correct Relational Database Management System (RDBMS). If a database follows Codd's 12 rules, it is called a True relational database management system.
+
+Q5
+Data redundancy refers to the duplication of data within a database or information system
+
+Q6
+ DDL (Data Definition Language) interpreter is a component of a database management system (DBMS) responsible for processing and executing DDL statements. DDL is a subset of SQL (Structured Query Language) used to define, modify, and manage the structure 
+
+Q8
+SQL key constraints are rules or conditions that define the uniqueness and relationships of data in database tables
+
+primary key
+CREATE TABLE Customers (
+    CustomerID INT PRIMARY KEY,
+    FirstName VARCHAR(50),
+    LastName VARCHAR(50)
+);
+
+
+Q9
+A savepoint in a database management system (DBMS) is a named point in a transaction to which you can later roll back if needed. 
+
+SAVEPOINT savepoint_name;
+
+Q10
+A trigger in SQL is a set of instructions or code that is automatically executed in response to a specific event or action that occurs in a database table. 
+
+CREATE TRIGGER trigger_name
+{BEFORE | AFTER} {INSERT | UPDATE | DELETE}
+ON table_name
+[FOR EACH ROW]
+BEGIN
+    -- Trigger code or statements
+END;
