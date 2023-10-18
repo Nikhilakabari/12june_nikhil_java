@@ -1,0 +1,33 @@
+
+
+Write a Program of Two 1D Matrix Addition using Operator Overloading
+
+
+#include<iostream>
+
+using namespace std;
+
+class z
+{
+	public:
+		int i,a = 100,b = 100;
+	void display()
+	{
+		cout<<"addition is:"<<i;
+	}
+	
+	z operator +(z &obj2)
+	{
+		
+		z obj3,obj1;
+		obj3.i =  obj1.a + obj2.b;
+		return obj3;
+	}
+};
+
+int main()
+{
+	z z1,z2,z3;
+	z3 = z1 + z2;
+	z3.display();
+}
