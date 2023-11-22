@@ -1,0 +1,45 @@
+Q 3.3  1) Write a program to find out the max number from given array using function
+
+ans :
+#include<stdio.h>
+
+int main()
+{
+    int r,max,n;
+    
+    int g[5] = {90,70,50,40,30};
+    max = g[0];
+    for (int n = 1; n < r; n++)
+    {
+        if (g[n] > max)
+        {
+            max = g[n]; 
+        }
+    }
+    printf("max no is:%d",max);
+    return 0;
+}
+
+ans :
+#include <stdio.h>
+
+int main() {
+   int a[100],i,max,r;
+   printf("enter the array you want to print");
+   scanf("%d",&i);
+   for(int r = 0; r < i;r++)
+   {
+   printf("enter the no;");
+   scanf("%d",&a[r]);
+   }
+   max = a[0];
+   for(int n =0; n <= a[r]; n++)
+   {
+       if(a[n] > max)
+       {
+           max = a[n];
+       }
+   }
+   printf("max no is :%d",max);
+    return 0;
+}

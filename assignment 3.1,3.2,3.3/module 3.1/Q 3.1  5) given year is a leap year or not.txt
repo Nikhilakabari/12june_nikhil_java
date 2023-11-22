@@ -1,0 +1,18 @@
+Q 3.1 5) WAP to check if the given year is a leap year or not.
+
+ans:
+#include<stdio.h>
+
+int main()
+{
+    int year;
+    printf("enter the year: ");
+    scanf("%d",&year);
+    if(year%4 == 0){
+        printf("your year is leap year");
+    }
+    else{
+        printf("your year is not leap year");
+    }
+    
+}

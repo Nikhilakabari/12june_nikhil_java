@@ -1,0 +1,35 @@
+Q 3.2 8)WAP to print number in reverse order e.g.: number = 64728 ---> reverse = 
+82746#include<stdio.h>
+
+ans :
+int main()
+{
+    
+    int n, num = 90678;
+for( z = 0; z < 5; z++)
+    {
+        n = num%10;
+        num /= 10;
+        printf("%d",n);
+        
+    }
+return 0;
+}
+
+
+
+int main()
+{
+    
+    int n, num ,z;
+    printf("enter the no");
+    scanf("%d",&num);
+for( z = 0; z < num; z++)
+    {
+        n = num%10;
+        num /= 10;
+        printf("%d",n);
+        
+    }
+return 0;
+}

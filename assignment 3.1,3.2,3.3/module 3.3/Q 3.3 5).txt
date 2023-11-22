@@ -1,0 +1,55 @@
+for Q 3.3 5) WAP to take two Array input from user and sort them in ascending or 
+descending order as per user’s choice
+
+ans:#include<stdio.h>
+
+int main()
+{
+    int a[10],c;
+    printf("enter the 2 no :");
+    for(int e = 0; e < 2 ; e++)
+    {
+        scanf("%d",&a[e]);
+    }
+    printf("enter the choise given below \n1.descending\n2.ascending");
+    scanf("%d",&c);
+    switch(c)
+    {
+        case 1:
+        for(int i = 0;i < 2;i++)
+        {
+            for(int j = 0;j<2 ;j++)
+            {
+                if(a[i]>a[j])
+                {
+                    int f = a[i];
+                    a[i] = a[j];
+                    a[j] = f;
+                }
+            }
+        }
+        for(int e = 0;e < 2;e++)
+        {
+            printf("%d",a[e]);
+        }
+        
+        case 2:
+        for(int i = 0;i < 2;i++)
+        {
+            for(int j = 0;j<2 ;j++)
+            {
+                if(a[i]<a[j])
+                {
+                    int f = a[i];
+                    a[i] = a[j];
+                    a[j] = f;
+                }
+            }
+        }
+        for(int e = 0;e < 2;e++)
+        {
+            printf("%d",a[e]);
+        }
+    }
+    return 0;
+}

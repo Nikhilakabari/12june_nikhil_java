@@ -1,0 +1,35 @@
+summ3.2  10)Write a program make a summation of given number
+
+
+#include<stdio.h>
+
+int main()
+{   
+    int num = 567288,sum = 0,n;
+
+    while (num > 0)
+    {
+        sum+=num%10;
+        num /=10;
+    }
+    printf("summation: \n%d",sum);
+    
+    return 0;
+}
+
+
+int main()
+{
+    int num,n=0,sum;
+    printf("enter the no");
+    scanf("%d",&num);
+    while(num > 0){
+        sum+=num%10;
+        num /= 10;
+        
+    }
+        printf("%d",sum);
+        
+    
+return 0;
+}

@@ -1,0 +1,30 @@
+#include <stdio.h>
+
+struct data{
+    int epno;
+    char epnm[90];
+    char epad[100];
+    int epag;
+} ;
+int main()
+{
+    struct data obj[4];
+    int r;
+    for(r = 0; r < 5 ; r++)
+    {
+        printf("enter employee no:");
+        scanf("%d",&obj[r].epno);
+        printf("enter employee name:");
+        scanf("%s",&obj[r].epnm);
+        printf("enter employee address:");
+        scanf("%s",&obj[r].epad);
+        printf("enter employee age:");
+        scanf("%d",&obj[r].epag);
+    }
+    for(r = 0; r <5 ;r++);
+    {
+        printf("\nep no is:%d\n ep name is:%s\n epad is:%s\n ep age is :%d",obj[r].epno,obj[r].epnm,obj[r].epad,obj[r].epag);
+        
+    }
+    return 0;
+}

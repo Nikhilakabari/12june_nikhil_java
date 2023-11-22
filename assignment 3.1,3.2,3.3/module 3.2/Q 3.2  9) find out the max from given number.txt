@@ -1,0 +1,43 @@
+3.2 9)Write a program to find out the max from given number
+
+ans:
+#include<stdio.h>
+
+int main()
+{   
+    int num = 5672889,max = 0,n;
+
+    while(num > 0)
+    {
+        n = num%10;
+        if(n > max)
+        {
+            max = n;
+        }
+        num /= 10;
+    }
+    printf("max num from given no is: %d\n",max);
+    
+    return 0;
+}
+
+
+#include <stdio.h>
+
+int main() {
+   int a,r;
+   printf("enter the array you want to print");
+   scanf("%d",&a);
+   int max = 0;
+   while(a > 0)
+   {
+       r = a%10;
+       if(r > max)
+      {
+          max = r;
+      }
+      a /= 10;
+   }
+   printf("max no is :%d",max);
+    return 0;
+}
