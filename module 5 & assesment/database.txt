@@ -1,0 +1,79 @@
+Q1
+
+ans: an organized collection of structured information, or data
+it works as store data
+
+Q 2
+Normalization is the process of organizing data in a database.
+
+Q3
+DBMS :stores data as file
+     :No relationship between data.
+     :Normalization is not present.
+     :DBMS does not support distributed database.
+     :It deals with small quantity of data.
+     :It is used for small organization and deal with small data.
+     :Security is less
+     :Examples: XML, Window Registry, Forxpro, dbaseIIIplus etc.
+
+RDBMS :stores data in table form.
+      :Data is stored in the form of tables which are related to each other.
+      :Normalization is present.
+      :RDBMS supports distributed database
+      :It deals with large amount of data.
+      :It is used to handle large amount of data.
+      :More security measures provided.
+      :xamples: MySQL, PostgreSQL, SQL Server, Oracle, Microsoft Access etc.
+
+
+Q4
+Dr E.F.Codd, also known to the world as the ‘Father of Database Management Systems’ had propounded 12 rules 
+
+Here is brief note on E.F Codd’s Twelve rules:
+
+Rule 0 − Foundation rule
+Rule 1 − Rule of Information
+Rule 2 − Rule of Guaranteed Access
+Rule 3 − Rule of Systematic Null Value Support
+Rule 4 − Rule of Active and online relational Catalog
+Rule 5 − Rule of Comprehensive Data Sub-language
+Rule 6 − Rule of Updating Views
+Rule 7 − Rule of Set level insertion, update and deletion
+Rule 8 − Rule of Physical Data Independence
+Rule 9 − Rule of Logical Data Independence
+Rule 10 − Rule of Integrity Independence
+Rule 11 − Rule of Distribution Independence
+Rule 12 − Rule of Non Subversion
+
+Q5
+Data redundancy refers to the duplication of data within a database or information system
+
+Q6
+ DDL (Data Definition Language) interpreter is a component of a database management system (DBMS) responsible for processing and executing DDL statements. DDL is a subset of SQL (Structured Query Language) used to define, modify, and manage the structure 
+
+Q8
+SQL key constraints are rules or conditions that define the uniqueness and relationships of data in database tables
+
+primary key
+CREATE TABLE Customers (
+    CustomerID INT PRIMARY KEY,
+    FirstName VARCHAR(50),
+    LastName VARCHAR(50)
+);
+
+
+Q9
+A savepoint in a database management system (DBMS) is a named point in a transaction to which you can later roll back if needed. 
+
+SAVEPOINT savepoint_name;
+
+Q10
+A trigger in SQL is a set of instructions or code that is automatically executed in response to a specific event or action that occurs in a database table. 
+
+CREATE TRIGGER trigger_name
+{BEFORE | AFTER} {INSERT | UPDATE | DELETE}
+ON table_name
+[FOR EACH ROW]
+BEGIN
+    -- Trigger code or statements
+END;

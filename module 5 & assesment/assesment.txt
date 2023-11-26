@@ -1,0 +1,97 @@
+
+
+Task : 1 (join multiple tables using left join)
+List all Countries and customers related to these countries.
+
+ans:
+SELECT customer.customer_name,country.country_name FROM customer LEFT JOIN country ON customer.id = country.id
+
+
+For each country displaying its name in English, the name of the city customer is located in as 
+well as the name of the customer.
+
+ans:
+SELECT
+    country.country_name_eng,
+    city.city_name,
+    customer.customer_name
+FROM
+    country
+LEFT JOIN
+    city
+ON
+    Country.id = city.id
+LEFT JOIN
+    customer
+ON
+    city.id = customer.id;
+
+
+Return even countries without related cities and customers.
+
+ans:
+SELECT
+    country.country_name,
+    NULL AS city_name,
+    NULL AS customer_name
+FROM
+    country
+WHERE
+    country.id NOT IN (SELECT DISTINCT id FROM city)
+    AND country.id NOT IN (SELECT DISTINCT id FROM customer);
+
+
+
+
+
+
+
+
+
+Task : 2 (join multiple tables using both left and inner join)
+
+
+Return the list of all countries that have pairs(exclude countries which are not referenced by any 
+city). For such pairs return all customers.
+
+ans:
+SELECT
+    country.country_name,
+    city.city_name,
+    customer.customer_name
+FROM
+    country
+LEFT JOIN
+    city
+ON
+    country.id = city.id
+INNER JOIN
+    customer
+ON
+    city.id = customer.id
+WHERE
+    city.id IS NOT NULL;
+
+
+
+
+
+Return even pairs of not having a single customer
+
+ans:
+SELECT
+    country.country_name,
+    city.city_name,
+    customer.customer_name
+FROM
+    country
+LEFT JOIN
+    city
+ON
+    country.id = city.id
+LEFT JOIN
+    customer
+ON
+    city.id = customer.id
+WHERE
+    customer.customer_name IS NULL
